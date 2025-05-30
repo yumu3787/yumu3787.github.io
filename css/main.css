@@ -1,0 +1,1224 @@
+/* #archives 文章歸檔頁面主要容器 */
+#archives {
+    margin: auto;                /* 置中 */
+    margin-top: 100px;           /* 上方留白 */
+    padding: 20px;               /* 內距 */
+}
+
+/* 歸檔頁面分類與標籤區塊 */
+#archives .categories-tags {
+    margin: auto;                /* 置中 */
+    margin-bottom: 50px;         /* 下方留白 */
+    max-width: 900px;            /* 最大寬度 */
+    text-align: center;          /* 內容置中 */
+    width: 100%;                 /* 滿版寬度 */
+}
+
+/* 分類與標籤的每個 span */
+#archives .categories-tags span {
+    display: inline-block;       /* 橫向排列 */
+    margin: 10px;                /* 間距 */
+}
+
+/* 分類與標籤內的 icon 樣式 */
+#archives .categories-tags span .icon {
+    color: #fff;                 /* 白色圖示 */
+    margin-left: 0;
+    margin-right: 10px;          /* 右側間距 */
+}
+
+/* 分類與標籤內的連結樣式 */
+#archives .categories-tags span a {
+    border: #ffffff80 1px solid; /* 半透明白色邊框 */
+    border-radius: 10px;         /* 圓角 */
+    color: #fff;                 /* 白色文字 */
+    padding: 10px 15px;          /* 內距 */
+    transition: background 0.25s, border 0.25s, color 0.25s; /* 動畫過渡 */
+}
+
+/* 滑鼠移到分類/標籤連結時的樣式 */
+#archives .categories-tags span a:hover {
+    background: #fff !important; /* 背景變白 */
+    border: #a5c2f5 1px solid;   /* 藍色邊框 */
+    color: #5c6b72;              /* 文字變深色 */
+}
+
+/* 歸檔頁面分類、標籤與文章資訊的排列方式 */
+#archives .category,
+#archives .tags .tag,
+.article .info .category,
+.article .info .tags,
+.article .info .tags .tag {
+    display: inline-block;       /* 橫向排列 */
+    margin-right: 10px;          /* 右側間距 */
+}
+
+/* 歸檔頁面標題 h3 樣式 */
+#archives h3 {
+    margin: 10px 0;
+}
+
+/* 加密區塊外距 */
+#crypto {
+    margin: 50px 0;
+}
+
+/* 加密失敗樣式 */
+#crypto.failure {
+    border-color: #ea4a5a;
+    color: #ea4a5a;
+}
+
+/* 加密失敗時聚焦樣式 */
+#crypto.failure:focus {
+    box-shadow: 0 0 0 3px #ea4a5a4d;
+}
+
+/* 加密成功樣式 */
+#crypto.success {
+    border-color: #34d058;
+    color: #34d058;
+}
+
+/* 頁尾區塊樣式 */
+#footer {
+    font-size: 14px;
+    margin-top: 150px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* 頁尾 icon 樣式 */
+#footer #footer-icon {
+    color: #66afef;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* 頁尾內容包裹區塊 */
+#footer #footer-wrap {
+    border-top: 1px solid #aaa;
+    color: #5c6b72;
+    margin: auto;
+    width: 900px;
+}
+
+/* 頁尾內容間距 */
+#footer #footer-wrap div {
+    margin: 15px;
+}
+
+/* 首頁側邊卡片寬度 */
+#home-card {
+    width: 300px;
+}
+
+/* 首頁卡片樣式 */
+#home-card #card-style {
+    background: #B0C4DE;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d9d9d980;
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    justify-content: center;
+    overflow: auto;
+    position: sticky;
+    text-align: center;
+    top: 10vh;
+    width: 300px;
+}
+
+/* 卡片內容區塊 */
+#home-card #card-div {
+    overflow: auto;
+    padding: 25px 0;
+}
+
+/* 卡片頭像樣式 */
+#home-card #card-div .avatar {
+    border: #f1f1f1 solid 3px;
+    border-radius: 50%;
+    height: 140px;
+    margin: auto;
+    text-align: center;
+    width: 140px;
+}
+
+/* 頭像圖片樣式 */
+#home-card #card-div .avatar img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* 滑鼠移到頭像時旋轉動畫 */
+#home-card #card-div .avatar:hover img {
+    transform: rotate(360deg);
+}
+
+/* 卡片描述文字 */
+#home-card #card-div .description {
+    margin: 20px auto;
+    width: 85%;
+}
+
+/* 友鏈區塊間距 */
+#home-card #card-div .friend-links .friend-link {
+    margin-bottom: 5px;
+}
+
+/* 友鏈連結樣式 */
+#home-card #card-div .friend-links a {
+    border-radius: 5px;
+    color: #5c6b72;
+    display: block;
+    padding: 8px 0;
+}
+
+/* 社群 icon 區塊間距 */
+#home-card #card-div .icon-links .icon-link {
+    margin: 5px;
+}
+
+/* 社群 icon 連結樣式 */
+#home-card #card-div .icon-links a {
+    border-radius: 5px;
+    color: #5c6b72;
+    font-size: 18px;
+    padding: 5px;
+}
+
+/* 滑鼠移到 icon/友鏈/分頁按鈕時的樣式 */
+#home-card #card-div .icon-links a:hover,
+#home-card #card-div .friend-links a:hover,
+#home-posts .page-current .page-num:hover {
+    background: #66afef;
+    color: #fff;
+}
+
+/* 友鏈與 icon 區塊分隔線 */
+#home-card #card-div .icon-links,
+#home-card #card-div .friend-links {
+    border-top: #cdcdcd solid 1px;
+    margin: 10px auto;
+    padding-top: 10px;
+    width: 85%;
+}
+
+/* 卡片名稱樣式 */
+#home-card #card-div .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+/* 首頁頭部區塊 */
+#home-head {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 首頁背景圖樣式 */
+#home-head #home-background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+/* 首頁資訊區塊（圓形） */
+#home-head #home-info .info {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* 首頁動畫圈圈樣式與動畫 */
+#home-head #home-info .loop:nth-child(1) {
+    animation: loop1 10s linear infinite;
+    background: #fff;
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.3;
+    transform: rotate(30deg);
+}
+#home-head #home-info .loop:nth-child(2) {
+    animation: loop2 15s linear infinite;
+    background: #fff;
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.45;
+    transform: rotate(60deg);
+}
+#home-head #home-info .loop:nth-child(3) {
+    animation: loop3 10s linear infinite;
+    background: #fff;
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.3;
+    transform: rotate(90deg);
+}
+#home-head #home-info .loop:nth-child(4) {
+    animation: loop4 15s linear infinite;
+    background: #fff;
+    border-radius: 38% 62% 63% 37%/41% 44% 56% 59%;
+    opacity: 0.45;
+    transform: rotate(120deg);
+}
+
+/* 首頁資訊與文章區塊置中 */
+#home-head #home-info,
+#home-posts {
+    margin: auto;
+}
+
+/* 首頁分頁按鈕區塊 */
+#home-posts .page-current {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* 當前分頁按鈕樣式 */
+#home-posts .page-current .current {
+    border-radius: 5px;
+    color: #F5F7FA;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 7px;
+    padding: 5px;
+    width: 40px;
+}
+
+/* 分頁按鈕與省略號樣式 */
+#home-posts .page-current .page-num,
+#home-posts .page-current .page-omit {
+    border-radius: 5px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 7px;
+    padding: 5px;
+    width: 35px;
+}
+
+/* 分頁連結顏色 */
+#home-posts .page-current a {
+    color: #999;
+}
+
+/* 首頁文章卡片樣式 */
+#home-posts .post {
+    background: #B0C4DE;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #d9d9d980;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+/* 文章分類與日期區塊 */
+#home-posts .post .category-and-date {
+    color: #5c6b72;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+/* 文章分類樣式 */
+#home-posts .post .category-and-date .category {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/* 文章分類連結、歸檔連結、icon、時間、文章資訊連結顏色 */
+#home-posts .post .category-and-date .category a,
+#archives a,
+#archives .tag-icon,
+#archives .item-time,
+#archives .categories-tags span a:hover .icon,
+.article .info a {
+    color: #5c6b72;
+}
+
+/* 文章日期、標籤、選單 span 樣式 */
+#home-posts .post .category-and-date .date,
+#archives .tags,
+#menu #desktop-menu a span {
+    display: inline-block;
+}
+
+/* 文章特殊標籤樣式 */
+#home-posts .post .category-and-date .special {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* 文章閱讀更多按鈕樣式 */
+#home-posts .post .go-post {
+    background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%);
+    border: 0;
+    border-radius: 20px 0;
+    bottom: -5px;
+    box-shadow: 2px 2px 10px 0 #ffbbf47a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 24px;
+    position: absolute;
+    right: -5px;
+    transition: box-shadow 0.25s ease-out, right 0.25s ease-out;
+}
+
+/* 閱讀更多按鈕 hover 效果 */
+#home-posts .post .go-post:hover {
+    box-shadow: -2px -2px 10px 0 #9abbf77a;
+    right: -7px;
+}
+
+/* 文章標籤樣式 */
+#home-posts .post .post-tags .tag {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* 文章標籤連結字體大小 */
+#home-posts .post .post-tags a {
+    font-size: 14px;
+}
+
+/* 文章標籤、歸檔資訊、文章資訊行高 */
+#home-posts .post .post-tags,
+#archives .info,
+.article .info {
+    line-height: 1.7;
+}
+
+/* 文章標題樣式 */
+#home-posts .post-title {
+    color: #fff;
+    text-align: center;
+}
+
+/* 文章卡片 hover 效果 */
+#home-posts .post:hover {
+    box-shadow: 0 0 5px #d9d9d9;
+    transform: translate(-5px, -5px);
+}
+
+/* 首頁文章列表包裹區塊 */
+#home-posts-wrap {
+    background: transparent;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 主要內容區塊統一 box-sizing */
+#home-posts-wrap,
+#archives,
+.article,
+#footer #footer-wrap {
+    box-sizing: border-box;
+}
+
+/* 載入動畫區塊 */
+#loading {
+    align-items: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    word-break: keep-all;
+    z-index: 2147483647;
+}
+
+/* 載入動畫內容間距 */
+#loading h2,
+#loading p,
+#loading img {
+    margin: 10px;
+}
+
+/* 載入動畫圖片樣式 */
+#loading img {
+    border-radius: 0;
+    height: 50px;
+}
+
+/* 載入動畫圓圈樣式 */
+#loading-circle {
+    align-items: center;
+    border: 10px solid #a3ddfb;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 50vmin;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    width: 50vmin;
+}
+
+/* 主要內容右側補白 */
+#main {
+    margin-right: calc(100% - 100vw);
+}
+
+/* 導覽列樣式 */
+#menu {
+    background: #92cafa;
+    box-shadow: 0 -1px 10px 0 #9e9e9e4d;
+    font-weight: bold;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    transition: background 0.25s ease-out, top 0.25s ease-out;
+    width: 100vw;
+    z-index: 1004;
+}
+
+/* 桌面選單高度 */
+#menu #desktop-menu {
+    height: 50px;
+}
+
+/* 桌面選單標題樣式 */
+#menu #desktop-menu .title {
+    color: #555;
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 5px;
+}
+
+/* 桌面選單連結樣式 */
+#menu #desktop-menu a {
+    color: #555;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* 手機選單樣式 */
+#menu #mobile-menu {
+    min-height: 50px;
+    text-align: center;
+}
+
+/* 手機選單項目樣式 */
+#menu #mobile-menu .items {
+    padding: 10px 0 20px;
+    z-index: 1002;
+}
+
+/* 手機選單單一項目樣式 */
+#menu #mobile-menu .items .item {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    min-width: 200px;
+    width: 80%;
+}
+
+/* 手機選單連結顏色 */
+#menu #mobile-menu .items a {
+    color: #555;
+}
+
+/* 手機選單標題樣式 */
+#menu #mobile-menu .title {
+    color: #555;
+    cursor: pointer;
+    z-index: 1003;
+}
+
+/* 選單遮罩 */
+#menu-curtain {
+    background: #0003;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+/* 隱藏選單時往上移 */
+#menu.hidden {
+    top: -50px;
+}
+
+/* 捲動時選單變色 */
+#menu.menu-color {
+    background: #0003;
+}
+
+/* 捲動時選單連結變白 */
+#menu.menu-color #desktop-menu a,
+#menu.menu-color #mobile-menu a,
+#menu.menu-color #mobile-menu .title {
+    color: #fff;
+}
+
+/* 預覽遮罩區塊 */
+#preview {
+    align-items: center;
+    background-color: #fffc;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1005;
+}
+
+/* 預覽內容陰影與最大尺寸 */
+#preview-content {
+    box-shadow: 0 0 50px 10px #d9d9d980;
+    margin: auto;
+    max-height: 95%;
+    max-width: 95%;
+}
+
+/* 搜尋列下方間距 */
+#search-bar {
+    margin-bottom: 50px;
+    z-index: 1000;
+}
+
+/* 時間軸反向排列 */
+#timeline-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* 全域元素預設樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scrollbar-color: #8ab5ff #e6efff;
+    scrollbar-width: thin;
+    word-wrap: break-word;
+}
+
+/* 文章內容區塊 */
+.article {
+    font-size: 15px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+/* 文章內容內文區塊 */
+.article .content {
+    margin: 50px 0;
+}
+
+/* 文章資訊日期樣式 */
+.article .info .date {
+    color: #5c6b72;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* 程式碼區塊樣式 */
+.code-content {
+    font-size: 13px;
+    line-height: 2;
+    overflow: auto;
+    padding: 50px 30px 20px;
+    white-space: pre;
+}
+
+/* 留言 iframe 與滾動條軌道樣式 */
+.comment iframe,
+body::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+
+/* 內容淡入淡出動畫 */
+.content {
+    transition: opacity 0.25s;
+}
+
+/* 內容中的多媒體元素置中與最大寬度 */
+.content img,
+.content video,
+.content audio,
+.content iframe {
+    display: block;
+    margin: 15px auto;
+    max-width: 75%;
+}
+
+/* 複製程式碼按鈕樣式 */
+.copycode {
+    color: #5c6b72;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* 複製程式碼 icon 樣式 */
+.copycode i {
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.25s;
+}
+
+/* 複製成功時 icon 放大 */
+.copycode.copied i {
+    transform: scale(1.25);
+}
+
+/* 複製狀態下 icon 顯示/隱藏 */
+.copycode.copied i:first-child,
+.copycode:not(.copied) i:last-child {
+    opacity: 0;
+}
+
+/* 淡入淡出動畫 */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* highlight.js 行號樣式 */
+.hljs-ln-code {
+    padding-left: 20px !important;
+}
+.hljs-ln-numbers {
+    border-right: 1px solid #ccc;
+    color: #ccc;
+    padding-right: 10px !important;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* icon 樣式 */
+.icon {
+    color: #5c6b72;
+    margin-right: 5px;
+}
+
+/* 輸入框樣式 */
+.input {
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    font-size: 15px;
+    height: 50px;
+    text-indent: 20px;
+    transition: background 0.25s, border 0.25s, box-shadow 0.25s;
+    width: 100%;
+}
+
+/* 輸入框聚焦樣式 */
+.input:focus {
+    background: #fff;
+    border-color: #0969da;
+    box-shadow: 0 0 0 3px #0969da4d;
+    outline: none;
+}
+
+/* 輸入框 hover 樣式 */
+.input:hover {
+    background: #fff;
+}
+
+/* 進場動畫 */
+.into-enter-active {
+    transition: opacity 0.5s, transform 0.5s;
+}
+.into-enter-from {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+/* KaTeX 公式換行 */
+.katex {
+    white-space: normal !important;
+}
+
+/* 程式語言標籤樣式 */
+.language {
+    background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 0.75rem #ed6ea14d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    left: 30px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+}
+
+/* 分頁、icon、友鏈連結動畫 */
+.page-num,
+.icon-link a,
+.friend-link a {
+    transition: background 0.25s, color 0.25s;
+}
+
+/* hover 動畫效果 */
+.page-num:hover,
+.icon-link a:hover,
+.friend-link a:hover,
+.categories-tags a:hover,
+.go-post:hover {
+    opacity: 1;
+}
+
+/* slide 進場動畫 */
+.slide-enter-active,
+.slide-leave-active {
+    transition: margin-top 0.3s, opacity 0.3s;
+}
+.slide-enter-from,
+.slide-leave-to {
+    margin-top: -300px;
+    opacity: 0;
+}
+
+/* 時間軸區塊樣式 */
+.timeline {
+    margin-bottom: 30px;
+    transition: margin-top 0.5s, opacity 0.3s, visibility 0.3s;
+}
+
+/* 時間軸內容樣式 */
+.timeline-content {
+    background: #fff;
+    border: 1px solid #0002;
+    border-radius: 3px;
+    margin-left: 17.5px;
+    padding: 24px;
+    transition: box-shadow 0.5s;
+}
+
+/* 時間軸內容 hover 陰影 */
+.timeline-content:hover {
+    box-shadow: 0 2px 8px #00000017;
+}
+
+/* 時間軸圓點樣式 */
+.timeline-tail {
+    background: #fff;
+    border: 2px solid #a5c2f5;
+    border-radius: 50%;
+    height: 7px;
+    position: absolute;
+    width: 7px;
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: #8ab5ff
+        linear-gradient(
+            45deg,
+            #fff6 25%,
+            transparent 25%,
+            transparent 50%,
+            #fff6 50%,
+            #fff6 75%,
+            transparent 75%,
+            transparent
+        );
+    border: 3px solid #e6efff;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track {
+    background: #e6efff;
+    border-radius: 100px;
+}
+
+/* 文字選取樣式 */
+::selection {
+    background-color: #3392ff2a;
+    color: unset;
+}
+
+/* 全域連結樣式 */
+a {
+    color: #66afef;
+    text-decoration: none;
+}
+a:hover,
+.content .copycode:hover {
+    opacity: 0.8;
+}
+
+/* 禁止選取的元素 */
+audio,
+button,
+iframe,
+img,
+video,
+#home-head,
+#menu,
+.categories-tags a,
+.copycode,
+.friend-link a,
+.go-post,
+.hljs-ln-numbers,
+.icon-link a,
+.katex,
+.language,
+.page-current {
+    user-select: none;
+}
+
+/* 粗體字樣式 */
+b,
+strong {
+    font-weight: bold;
+    line-height: 2.5;
+}
+
+/* 引用區塊樣式 */
+blockquote {
+    background: #d9e8ff6b;
+    border-left: 3px solid #1e3e3f;
+    border-radius: 3px;
+    margin: 15px 0;
+    overflow: auto;
+    padding: 0 15px;
+}
+
+/* body 樣式 */
+body {
+    background: #5A7BA2;
+    color: #1e3e3f;
+    font: 500 14px Lexend, "Noto Sans SC", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* 行內程式碼樣式 */
+code {
+    background: #bddcf76b;
+    border-radius: 4px;
+    line-height: 2.5;
+    padding: 4px 8px;
+}
+
+/* 標題樣式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1e3e3f;
+    font-weight: bold;
+    margin: 15px 0;
+    word-break: keep-all;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 27px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 15px;
+}
+
+/* 分隔線樣式 */
+hr {
+    border-style: dashed none none;
+    border-width: 1.5px;
+}
+
+/* 多媒體元素圓角 */
+img,
+video,
+audio,
+iframe {
+    border-radius: 10px;
+}
+
+/* 標記文字樣式 */
+mark {
+    background: #fff13360;
+    border-radius: 4px;
+    color: unset;
+    line-height: 2.5;
+    padding: 4px 8px;
+}
+
+/* 段落與列表行高與間距 */
+p,
+ul,
+ol {
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+/* 程式碼區塊樣式 */
+pre {
+    border: 1px solid #ebeef5;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px 0 #0000001a;
+    margin: 25px 0;
+    overflow: hidden;
+    white-space: normal;
+}
+
+/* 程式碼字型 */
+pre,
+code,
+.hljs,
+.input,
+.language {
+    font-family: "Fira Code", "Noto Sans SC", monospace;
+}
+
+/* 表格樣式 */
+table:not(.hljs-ln) {
+    margin: 15px 0;
+}
+table:not(.hljs-ln) td:nth-child(even) {
+    background: #c7e0fb4d;
+}
+table:not(.hljs-ln) td:nth-child(odd) {
+    background: #d9e8ff4d;
+}
+table:not(.hljs-ln) th {
+    background: #a3ddfb;
+}
+table:not(.hljs-ln) tr th,
+table:not(.hljs-ln) tr td {
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+/* 列表項目間距 */
+ul li,
+ol li {
+    margin: 8px 0;
+}
+
+/* 首頁動畫圈圈 keyframes */
+@keyframes loop1 {
+    from {
+        transform: rotate(30deg);
+    }
+    to {
+        transform: rotate(390deg);
+    }
+}
+@keyframes loop2 {
+    from {
+        transform: rotate(60deg);
+    }
+    to {
+        transform: rotate(420deg);
+    }
+}
+@keyframes loop3 {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(450deg);
+    }
+}
+@keyframes loop4 {
+    from {
+        transform: rotate(120deg);
+    }
+    to {
+        transform: rotate(480deg);
+    }
+}
+
+/* 桌面版 RWD */
+@media (min-width: 900px) {
+    #home-head #home-info .info .wrap {
+        padding: 25px;
+    }
+    #home-head #home-info .info .wrap h1 {
+        font-size: 52px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    #home-head #home-info .info .wrap h3 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    #home-head #home-info .info .wrap h5 {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    #home-head #home-info .loop {
+        display: inline-block;
+        height: 500px;
+        position: absolute;
+        width: 500px;
+    }
+    #home-head #home-info,
+    #home-head #home-info .info {
+        height: 500px;
+        width: 500px;
+    }
+    #home-posts {
+        margin-right: 50px;
+        width: 850px;
+    }
+    #home-posts .post {
+        margin-bottom: 25px;
+        padding: 50px;
+    }
+    #home-posts .post .description {
+        padding: 20px 0;
+    }
+    #home-posts-wrap {
+        max-width: 1200px;
+    }
+    #menu #desktop-menu {
+        display: block;
+    }
+    #menu #mobile-menu {
+        display: none;
+    }
+    .article,
+    #archives,
+    #footer #footer-wrap {
+        width: 900px;
+    }
+    .home-posts-wrap-no-card #home-posts {
+        margin: auto;
+    }
+    ul,
+    ol {
+        padding-left: 40px;
+    }
+}
+
+/* 平板 RWD */
+@media (min-width: 900px) and (max-width: 1200px) {
+    #home-card {
+        display: none;
+    }
+    #home-posts {
+        width: 100%;
+    }
+    #home-posts-wrap,
+    #archives {
+        width: 800px;
+    }
+}
+
+/* 手機版 RWD */
+@media (max-width: 900px) {
+    #home-head #home-info {
+        height: 350px;
+        width: 350px;
+    }
+    #home-head #home-info .info {
+        align-items: center;
+        background: #ffffffa6;
+        display: flex;
+        height: 350px;
+        justify-content: center;
+        margin: auto;
+        width: 350px;
+    }
+    #home-head #home-info .info .wrap {
+        padding: 50px;
+    }
+    #home-head #home-info .info .wrap h1 {
+        font-size: 46px;
+        margin-bottom: 10px;
+    }
+    #home-head #home-info .info .wrap h3 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    #home-head #home-info .info .wrap h5 {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    #home-head #home-info .loop {
+        display: none;
+        height: 350px;
+        position: absolute;
+        width: 350px;
+    }
+    #home-posts {
+        margin: auto;
+        width: 100%;
+    }
+    #home-posts .post {
+        margin-bottom: 30px;
+        padding: 20px 30px;
+    }
+    #home-posts .post .description {
+        padding: 20px 0;
+    }
+    #home-posts .post .post-tags {
+        padding-right: 69px;
+    }
+    #home-posts-wrap,
+    .article,
+    #archives,
+    #footer #footer-wrap {
+        width: 100%;
+    }
+    #menu #desktop-menu,
+    #home-card {
+        display: none;
+    }
+    #menu #mobile-menu {
+        display: block;
+    }
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+}
