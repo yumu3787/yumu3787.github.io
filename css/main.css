@@ -331,7 +331,7 @@
 
 /* 文章分類與日期區塊 */
 #home-posts .post .category-and-date {
-    color: #5c6b72;
+    color: #ffffff;
     margin-top: 15px;
     text-align: center;
     width: 100%;
@@ -875,7 +875,7 @@ body::-webkit-scrollbar-track {
 
 /* 全域連結樣式 */
 a {
-    color: #66afef;
+    color: #6a1b9a;
     text-decoration: none;
 }
 a:hover,
